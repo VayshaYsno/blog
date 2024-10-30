@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}Someshit{% endblock %}
+
+{% block body %}
+<div class="container">
+  <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal text-body-emphasis">Post price</h1>
+      <p class="fs-5 text-body-secondary">Our page is oriented to allow you to post ads and all the info you want to be seen by world. It have this timetags of being on site, and pricelists.</p>
+      <p><h2>Good luck Ashen One. Let the flames guide you.</h2></p>
+      <p><h3>{{ count }} pages already running.</h3></p>
+    </div>
+<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Some info</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">₴100<small class="text-body-secondary fw-light">/mth</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Up to 10000 words</li>
+              <li>Only .txt format</li>
+              <li>No high-page placement</li>
+              <li>NSFW not allowed</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for article</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">ADS</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">₴450<small class="text-body-secondary fw-light">/mth</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Up to 30000 words</li>
+              <li>PNG`s && links allowed</li>
+              <li>Medium-page-ranged</li>
+              <li>Light erotic content allowed</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Prepare to PR</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Ethernet fucker</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">₴1200<small class="text-body-secondary fw-light">/mth</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li><b>Unlimited size of text</b></li>
+              <li><b>Integrations allowed!!</b></li>
+              <li><b>High-page placement booked</b></li>
+              <li><b>NSFW, 18+ content, all allowed</b></li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">BECOME A MONSTER</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock %}

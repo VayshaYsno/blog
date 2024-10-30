@@ -1,0 +1,26 @@
+# version: '3'
+services:
+  testing-docker:
+    build:
+      context: .
+    ports:
+      - "8000:5000"
+    container_name: testing-docker
+    environment:
+        - DB_USER=root
+        - DB_PASSWORD=userer
+    links:
+      - db
+    depends_on:
+      - db
+    restart: always
+  db:
+    container_name: mydatabase
+    image: mysql:latest
+    volumes:
+      - ./db:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=userer
+      - MYSQL_DATABASE=dbfile
+    ports:
+      - "3306:3306"

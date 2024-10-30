@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}All posts{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+        <h1>Activity lineup</h1>
+        {% for ele in post %}
+        <div class="alert alert-info">
+            <h2>{{ ele.title }}</h2>
+            <p>{{ ele.intro}}</p>
+            <p><b>Дата: {{ ele.data.date()}}</b></p>
+            <a href="/posts/{{ ele.id }}" class="btn btn-info">Читать</a>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

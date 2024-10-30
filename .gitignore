@@ -1,0 +1,13 @@
+# created by virtualenv automatically
+# .venv/
+# .vscode/launch.json
+# launch.json
+# .idea/
+# __pycache__/
+# db/
+# db/mysql.sock
+db/
+.vscode/
+.venv/
+.idea
+__pycache__/

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Editing {{ article.id }}{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+        <h1>Edit details:</h1>
+        <form method="post">
+            <input type="text" name="title" class="form-control" value="{{ article.title }}" style="height: 50px"><br>
+            <textarea name="intro" id="intro" class="form-control" placeholder="Cutted description...">{{ article.intro }}</textarea><br>
+            <textarea name="text" id="text" class="form-control" placeholder="Enter your text here..." style="height: 150px">{{ article.text }}</textarea><br>
+            <input type="submit" class="btn btn-success"  value="  Change  ">
+        </form>
+    </div>
+{% endblock %}
